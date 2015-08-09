@@ -1,2 +1,2 @@
 # aungin
-Nginx Managemet Console
+Nginx Management Console
