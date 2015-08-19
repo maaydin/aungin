@@ -19,5 +19,14 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+  app.import("bower_components/bootstrap/dist/js/bootstrap.min.js");
+  app.import("bower_components/bootstrap/dist/css/bootstrap.min.css");
+  app.import("bower_components/bootstrap/dist/css/bootstrap-theme.min.css");
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot', {destDir: 'fonts'});
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg', {destDir: 'fonts'});
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf', {destDir: 'fonts'});
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff', {destDir: 'fonts'});
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2', {destDir: 'fonts'});
+
   return app.toTree();
 };
